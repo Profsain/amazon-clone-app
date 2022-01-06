@@ -1,0 +1,16 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1500px;
+}
+
+.home__row {
+    display: flex;
+    z-index: -1;
+    margin-right: 5px;
+    margin-left: 5px;
+}
