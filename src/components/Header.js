@@ -4,16 +4,20 @@ import SearchIcon from '@material-ui/icons/Search';
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import ArrowDropDownOutlinedIcon from '@material-ui/icons/ArrowDropDownOutlined';
+import {Link} from 'react-router-dom'
 
 
 function Header() {
     return (
         <div className='header'>
-            <img
+            <Link to='/'>
+                <img
                 className='header__logo'
                 src='https://www.doorwaysva.org/wp-content/uploads/2019/06/amazon-logo.png'
                 alt='amazon-logo'
-            />
+                />
+            </Link>
+    
             <div className='header__deliver'>
                 <LocationOnOutlinedIcon />
                 <div className='header__option'>
@@ -45,12 +49,15 @@ function Header() {
                     <span className='header__optionLineOne'>Returns</span>
                     <span className='header__optionLineTwo'>& Orders</span>
                 </div>
-                <div className='header__optionBasket'>
-                    <ShoppingCartOutlinedIcon
-                        className='header__cart'
-                    />
-                    <span className='header__optionLineTwo header__basketCount'>0</span>
-                </div>
+                <Link to='/checkout'>
+                    <div className='header__optionBasket'>
+                        <ShoppingCartOutlinedIcon
+                            className='header__cart'
+                        />
+                        <span className='header__optionLineTwo header__basketCount'>0</span>
+                    </div>
+                </Link>
+        
             </div>
         </div>
     )

@@ -27,10 +27,10 @@ function Footer() {
                         <li>Sell on Amazon Business</li>
                         <li>Sell apps on Amazon</li>
                         <li>Become an Affiliate</li>
-                        <li>Advertise Your Products</li>
-                        <li>Self-Publish with Us</li>
-                        <li>Host an Amazon Hum</li>
-                        <li>- See More Make Money with Us</li>
+                        <li >Advertise Your Products</li>
+                        <li >Self-Publish with Us</li>
+                        <li >Host an Amazon Hum</li>
+                        <li >- See More Make Money with Us</li>
                     </ul>
                 </div>
 
@@ -38,24 +38,24 @@ function Footer() {
                     <h3>Amazon Payment Products</h3>
                     <ul>
                         <li>Amazon Business Card</li>
-                        <li>Shop with Points</li>
-                        <li>Reload Your Balance</li>
-                        <li>Amazon Currency Converter</li>
-                        <li>Coins Pay</li>
+                        <li >Shop with Points</li>
+                        <li >Reload Your Balance</li>
+                        <li >Amazon Currency Converter</li>
+                        <li >Coins Pay</li>
                     </ul>
                 </div>
 
                 <div className='footer__bottomContainer'>
                     <h3>Let Us Help You</h3>
                     <ul>
-                        <li>Amazon and COVID-19</li>
-                        <li>Your Account</li>
-                        <li>Your Orders</li>
-                        <li>Shipping Rates & Policies</li>
-                        <li>Returns & Replacements</li>
-                        <li>Manage Your Content and Devices</li>
-                        <li>Amazon Assistant</li>
-                        <li>Help</li>
+                        <li >Amazon and COVID-19</li>
+                        <li >Your Account</li>
+                        <li >Your Orders</li>
+                        <li >Shipping Rates & Policies</li>
+                        <li >Returns & Replacements</li>
+                        <li >Manage Your Content and Devices</li>
+                        <li >Amazon Assistant</li>
+                        <li >Help</li>
                     </ul>
                 </div>
             </div>
