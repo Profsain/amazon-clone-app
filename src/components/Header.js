@@ -4,10 +4,13 @@ import SearchIcon from '@material-ui/icons/Search';
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import ArrowDropDownOutlinedIcon from '@material-ui/icons/ArrowDropDownOutlined';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import {useStateValue} from '../StateProvider.js'
 
 
 function Header() {
+    //accessing the State Provider
+    const [{basket}, dispatch] = useStateValue()
     return (
         <div className='header'>
             <Link to='/'>
@@ -54,7 +57,7 @@ function Header() {
                         <ShoppingCartOutlinedIcon
                             className='header__cart'
                         />
-                        <span className='header__optionLineTwo header__basketCount'>0</span>
+                        <span className='header__optionLineTwo header__basketCount'>{ basket.length}</span>
                     </div>
                 </Link>
         
