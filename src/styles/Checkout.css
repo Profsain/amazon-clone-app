@@ -8,6 +8,7 @@
 .checkout__left {
     background-color: white;
 }
+
 .checkout__ads {
     width: 100%;
     margin-bottom: 10px;
@@ -17,5 +18,10 @@
     margin-left: 10px;
     padding: 10px;
     border-bottom: 1px solid lightgray;
-    
+}
+
+.checkout__delete {
+    font-weight: 600;
+    color: darkgray;
+    cursor: pointer;
 }

@@ -34,6 +34,11 @@ const reducer = (state, action) => {
                 ...state,
                 basket: newBasket
             }
+        case "REMOVE_ALL_FROM_BASKET":
+            return {
+                ...state,
+                basket: []
+            }
         default:
             return state
     }

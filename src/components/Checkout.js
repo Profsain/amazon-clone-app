@@ -6,6 +6,12 @@ import {useStateValue} from '../StateProvider.js'
 
 function Checkout() {
     const [{ basket }, dispatch] = useStateValue()
+    //remove all product from cart
+    const removeAllProduct = () => {
+        dispatch({
+            type: "REMOVE_ALL_FROM_BASKET"
+        })
+    }
     
     return (
         <div className='checkout'>
@@ -17,7 +23,7 @@ function Checkout() {
                 />
                 <div className='checkout__title'>
                     <h2 className='checkout__titleText'>Shopping Cart</h2>
-                    <p className='checkout__delete'>Delete all items</p>
+                    <p className='checkout__delete' onClick={removeAllProduct}>Delete all items</p>
                 </div>
                 {basket.map(item => (
                     <CheckoutProduct
