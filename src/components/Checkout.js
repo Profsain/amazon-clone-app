@@ -5,7 +5,7 @@ import CheckoutProduct from './CheckoutProduct'
 import {useStateValue} from '../StateProvider.js'
 
 function Checkout() {
-    const [{ basket }, dispatch] = useStateValue()
+    const [{ basket, user }, dispatch] = useStateValue()
     //remove all product from cart
     const removeAllProduct = () => {
         dispatch({
@@ -22,6 +22,7 @@ function Checkout() {
                     alt='amazon ads banner'
                 />
                 <div className='checkout__title'>
+                    <h3>{user.email }</h3>
                     <h2 className='checkout__titleText'>Shopping Cart</h2>
                     <p className='checkout__delete' onClick={removeAllProduct}>Delete all items</p>
                 </div>

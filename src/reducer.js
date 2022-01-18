@@ -1,6 +1,7 @@
 //initial app state
 export const initialState = {
     basket: [],
+    user: null
 }
 
 //a selecto to cal the total amount
@@ -38,6 +39,11 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 basket: []
+            }
+        case "SET_USER":
+            return {
+                ...state,
+                user: action.user
             }
         default:
             return state
